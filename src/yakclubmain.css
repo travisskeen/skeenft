@@ -1,0 +1,280 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+h2, p {
+    text-align: center;
+    margin: 10px;
+}
+
+.reg-container h2 {
+    font-size: 20px;
+}
+
+.body-container {
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+/* Elite NFTs start here */
+#elites, #yak-club {
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.elite-outer-container {
+    background-size: cover;
+    background-color: #ffffff40;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 0px 100px 0px;
+    padding: 25px 0px;
+    flex-wrap: wrap;
+}
+
+.elite-container {
+    background-color: white;
+    box-shadow: 0px 15px 30px -10px #000000;
+    border-radius: 7px;
+    padding: 0px 0px 10px 0px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.elite-nft-1:hover, .elite-nft-2:hover, .elite-nft-3:hover, .elite-nft-4:hover, .elite-nft-5:hover {
+    width: 300px;
+    height: 240px;
+    transition: .7s ease all;
+}
+
+.elite-nft-1, .elite-nft-2, .elite-nft-3, .elite-nft-4, .elite-nft-5 {
+    width: 225px;
+    height: 180px;
+    background-size: cover;
+    border-radius: 5px;
+    transition: .7s ease all;
+}
+
+.elite-nft-1, #mi1 {
+    background-image: url("https://lh3.googleusercontent.com/sHEKjoseOAeNjJDM_4Uo_aJgMdCrR9QPS7ZSVHIQz0IUicxPp-i4UxmeT42_iXCKkdGBkDPCBMp1NfbKUfdWmbQ12-G_xbCVfMCFLA=w600");
+}
+
+.elite-nft-2, #mi2 {
+    background-image: url("https://lh3.googleusercontent.com/0dMpTZtcneJ0mgv-_yMADBWoqsxiqmppBRkwtSjcY0tq5x5RoL8dFN-rDrqW4Ylu-TXqadyOfO8yD9tSnnsFqLwBScVG7zJr8q9M=w600");
+}
+
+.elite-nft-3, #mi3 {
+    background-image: url("https://lh3.googleusercontent.com/sUNieoNdeDKv3rJTumY0UwugNimkMw3IGweCNbL4ajageOn30WmIA44wnoWKB8ZulIEBM-1SsnUHgZ7nbbB5RPgFdkD4wRADTtyEgg=w600");
+}
+
+.elite-nft-4, #mi4 {
+    background-image: url("https://lh3.googleusercontent.com/g-Gih8F-8twoxLX65oxSj2zJhzXEKTYqp3ivtVEKhm1AyQG-Q9MDk2h5lF0mJxwqycLYix3Jfpv5AjomWJ-U1WNtoOnp6WMw2n2gRiw=w600");
+}
+
+.elite-nft-5, #mi5 {
+    background-image: url("https://lh3.googleusercontent.com/hTLhbj1V80-HVy_SH8Jx8_HLXoi_naqWwA5P0YkOJc8Mhus-pgkJzrAcwo6wHT8k3pOhRxq_a0Rlu_1xp3puO-NDYlBxVHQeUPnQ2A=w600");
+}
+
+/* Elite NFT modals (upon click) start here */
+.modal-bg1, .modal-bg2, .modal-bg3, .modal-bg4, .modal-bg5 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0%;
+    Left: 0%;
+    background-color: #00000050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg1-active, .bg2-active, .bg3-active, .bg4-active, .bg5-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    position: relative;
+    background-color: white;
+    width: 750px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+    .modal a {
+        font-family: 'Monserrrat', sans-serif;
+        font-size: 25px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background-color:white;
+        color: rgb(0, 181, 253);
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(0, 181, 253);
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .modal a:hover {
+        background-color: rgb(0, 183, 255);
+        color: white;
+    }
+
+    .modal-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-family: 'Monserrrat', sans-serif;
+        color: rgb(171, 177, 184);
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .modal-close:hover {
+        color: rgb(0, 181, 253);
+    }
+
+    #mi1, #mi2, #mi3, #mi4, #mi5 {
+        background-size: cover;
+        width: 600px;
+        height: 500px;
+        border-radius: 7px;
+        margin: 20px;
+        z-index: 1;
+        box-shadow: 0px 15px 30px -10px #000000;
+    }
+
+#yak-club {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+hr {
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Yak Club NFTs start here */
+.reg-outer-container-1, .reg-outer-container-2 {
+    box-sizing: border-box;
+    background-size: cover;
+    background-color: #FFFFFF99;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.reg-container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px -15px #000000;
+    margin: 15px;
+}
+
+.reg-nft:hover {
+    width: 200px;
+    height: 160px;
+    transition: .7s ease all;
+}
+
+.reg-nft {
+    width: 150px;
+    height: 120px;
+    background-size: cover;
+    border-radius: 5px;
+    transition: .7s ease all;
+}
+
+#rnft1 {
+    background-image: url("https://i.ibb.co/G2NQ25d/1.png");
+}
+
+#rnft2 {
+    background-image: url("https://i.ibb.co/wYhPy4L/2.png");
+}
+
+#rnft3 {
+    background-image: url("https://i.ibb.co/qgjkcnh/3.png");
+}
+
+#rnft4 {
+    background-image: url("https://i.ibb.co/BgNrSwQ/4.png");
+}
+
+#rnft5 {
+    background-image: url("https://i.ibb.co/Xpf8Qbv/5.png");
+}
+
+#rnft6 {
+    background-image: url("https://i.ibb.co/BsRvVRc/6.png");
+}
+
+#rnft7 {
+    background-image: url("https://i.ibb.co/1ZWq0hy/7.png");
+}
+
+#rnft8 {
+    background-image: url("https://i.ibb.co/RcKTKjM/8.png");
+}
+
+#rnft9 {
+    background-image: url("https://i.ibb.co/VSHZNBn/9.png");
+}
+
+#rnft10 {
+    background-image: url("https://i.ibb.co/DR8h9N6/10.png");
+}
+
+#rnft11 {
+    background-image: url("https://i.ibb.co/d4KXsZy/11.png");
+}
+
+#rnft12 {
+    background-image: url("https://i.ibb.co/CJFkzz7/12.png");
+}
+
+/* Slider styling */
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 725px) {
+    .modal {
+        width: 350px;
+        height: 325px;
+    }
+
+    #mi1, #mi2, #mi3, #mi4, #mi5 {
+        width: 300px;
+        height: 240px;
+    }
+
+    .modal a {
+        font-size: 15px;
+    }
+    
+    .modal-close {
+        font-size: 15px;
+        top: -7px;
+        right: -7px;
+    }
+}

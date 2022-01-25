@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.body-container {
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    display: flex;
+    justify-content: center;
+    align-items: Center;
+    flex-wrap: wrap;
+    overflow-wrap: normal;
+}
+
+.entry-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.entry-container:hover {
+  cursor: pointer;
+}
+
+.entry-logo {
+  width: 500px;
+  height: 450px;
+  background-size: cover;
+  background-image: url("https://lh3.googleusercontent.com/fkxTV6CFu6XW-ELkIoKTFAbq3Eku8MXtc2FNojE9rVjnPJ22yAMU_XWGl8dHznEL_rCWSsppDJ29Y-RlgkrzRe8_FS9GbjTofJ5T=w600");
+  margin: 50px 0px;
+  transform: translateX(-5%);
+  transition: 1s ease all;
+}
+
+.entry-logo:hover {
+    background-image: url("https://lh3.googleusercontent.com/nSMzwEQFH_cya1BkNjY4V-wCctubCpaLubxNBAq88c9O9Bh7kbTNjgIRBioU1OjJ_zZ8f2wO_mHvAEpcAuBl73GLBzLJrE-gnG0BQg=w600");
+    transition: 3s ease all;  
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px 20px 30px;
+  color: white;
+  font-size: 50px;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 725px) {
+  h1 {
+    font-size: 40px;
+  }
+  
+  .entry-logo {
+    width: 400px;
+    height: 405px;
+    background-image: url("https://lh3.googleusercontent.com/nSMzwEQFH_cya1BkNjY4V-wCctubCpaLubxNBAq88c9O9Bh7kbTNjgIRBioU1OjJ_zZ8f2wO_mHvAEpcAuBl73GLBzLJrE-gnG0BQg=w600");
+  }
+
+  .entry-container {
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+}  
