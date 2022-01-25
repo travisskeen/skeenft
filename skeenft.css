@@ -38,14 +38,14 @@ body, html {
   width: 500px;
   height: 450px;
   background-size: cover;
-  background-image: url("https://lh3.googleusercontent.com/fkxTV6CFu6XW-ELkIoKTFAbq3Eku8MXtc2FNojE9rVjnPJ22yAMU_XWGl8dHznEL_rCWSsppDJ29Y-RlgkrzRe8_FS9GbjTofJ5T=w600");
+  background-image: url("https://i.ibb.co/bXmVGYH/Yak2-1-Silhouetteai.png");
   margin: 50px 0px;
   transform: translateX(-5%);
   transition: 1s ease all;
 }
 
 .entry-logo:hover {
-    background-image: url("https://lh3.googleusercontent.com/nSMzwEQFH_cya1BkNjY4V-wCctubCpaLubxNBAq88c9O9Bh7kbTNjgIRBioU1OjJ_zZ8f2wO_mHvAEpcAuBl73GLBzLJrE-gnG0BQg=w600");
+    background-image: url("https://i.ibb.co/1dbFf8h/Yak-2-1-copy.png");
     transition: 3s ease all;  
 }
 
@@ -71,7 +71,7 @@ h1 {
   .entry-logo {
     width: 400px;
     height: 405px;
-    background-image: url("https://lh3.googleusercontent.com/nSMzwEQFH_cya1BkNjY4V-wCctubCpaLubxNBAq88c9O9Bh7kbTNjgIRBioU1OjJ_zZ8f2wO_mHvAEpcAuBl73GLBzLJrE-gnG0BQg=w600");
+    background-image: url("https://i.ibb.co/1dbFf8h/Yak-2-1-copy.png");
   }
 
   .entry-container {

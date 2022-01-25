@@ -110,14 +110,33 @@ h2, p {
 .modal {
     position: relative;
     background-color: white;
-    width: 750px;
-    height: 550px;
+    width: 850px;
+    height: 650px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
 }
+    
+    .modal-contents {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .modal-space-right {
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        /*background-color: blue;*/
+        vertical-align: center;
+    }
+    
+    .modal-title, .modal-traits, .modal-rarity {
+        font-family: 'Monserrrat', sans-serif;
+        font-size: 20px;
+        color:rgb(171, 177, 184);
+    }
 
     .modal a {
         font-family: 'Monserrrat', sans-serif;
